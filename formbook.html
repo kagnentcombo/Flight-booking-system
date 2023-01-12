@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+.myLink {display: none}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Navigation Bar -->
+<div class="w3-bar w3-white w3-border-bottom w3-xlarge">
+  <a href="#" class="w3-bar-item w3-button w3-text-blue w3-hover-blue"><b><i class="fa fa-plane w3-margin-right"></i>FlightToGo</b></a>
+  <!-- <a href="#" class="w3-bar-item w3-button w3-right w3-hover-red w3-text-grey"><i class="fa fa-search"></i></a> -->
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px">
+  <img class="w3-image" src="background.png" alt="London" width="1500" height="700">
+  <div class="w3-display-middle" style="width:65%">
+    <div class="w3-bar w3-black">
+      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Booker');"><i class="fa fa-pencil w3-margin-right"></i>Booker</button>
+      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Passenger');"><i class="fa fa-pencil w3-margin-right"></i>Passenger</button>
+      <!-- <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Car');"><i class="fa fa-car w3-margin-right"></i>Rental</button> -->
+    </div>
+
+    <!-- Tabs -->
+    <div id="Booker" class="w3-container w3-white w3-padding-16 myLink">
+      <!-- <h3>Travel the world with us</h3> -->
+      <!-- <h3>เลือกเที่ยวบินที่ต้องการ</h3> -->
+      <div class="w3-row-padding" style="margin:0 -16px;">
+        <div class="w3-half"><h3>กรุณากรอกข้อมูลของผู้จอง</h3>
+      <label>ชื่อ-นามสกุล</label>
+          <input class="w3-input w3-border" type="text" id="bname" placeholder="กรุณากรอกชื่อ">
+       <label>รหัสบัตรประชาชน</label>
+          <input class="w3-input w3-border" type="text" id="bCID" placeholder="กรุณากรอกรหัสบัตรประชาชน 13 หลัก">
+       <label>โทรศัพท์</label>
+          <input class="w3-input w3-border" type="text" id="bphone" placeholder="กรุณากรอกหมายเลขโทรศัพท์ที่ติดต่อได้">
+         <label>Email</label>
+          <input class="w3-input w3-border" type="text" id="bemail" placeholder="กรุณากรอก Email">
+          <p><button class="w3-button w3-dark-grey">ต่อไป</button></p>
+        </div>
+        </div>
+        
+      </div>
+      
+    <!-- </div> -->
+    <div id="Passenger" class="w3-container w3-white w3-padding-16 myLink">
+        <!-- <h3>Travel the world with us</h3> -->
+        <!-- <h3>เลือกเที่ยวบินที่ต้องการ</h3> -->
+        <div class="w3-row-padding" style="margin:0 -16px;">
+            <div class="w3-half"><h3>กรุณากรอกข้อมูลของผู้โดยสาร</h3>
+                <label>จำนวนผู้โดยสาร</label>
+                <select class="w3-input w3-border" id="numofpass" name="numofpass" placeholder="ระบุจำนวนผู้โดยสาร">
+                    <option selected> </option>
+                    <option value="1">&nbsp 1 &nbsp</option>
+                    <option value="2">&nbsp 2 &nbsp</option>
+                    <option value="3">&nbsp 3 &nbsp</option>
+                    <option value="4">&nbsp 4 &nbsp</option>
+                    <option value="5">&nbsp 5 &nbsp</option>
+                    <option value="6">&nbsp 6 &nbsp</option>
+                    <option value="7">&nbsp 7 &nbsp</option>
+                    <option value="8">&nbsp 8 &nbsp</option>
+                    <option value="9">&nbsp 9 &nbsp</option>
+                    <option value="10">&nbsp 10 &nbsp</option>
+                </select>
+          <!-- <p><button class="w3-button w3-dark-grey" onclick="a(document.getElementById('numofpass').value)">ต่อไป</button></p> -->
+        </div>
+          <div class="w3-half" id="list">
+            <!-- <label>ชื่อ</label>
+            <input class="w3-input w3-border" type="text" id="fname1" placeholder="กรุณากรอกชื่อ">
+            <label>นามสกุล</label>
+            <input class="w3-input w3-border" type="text" id="lname1" placeholder="กรุณากรอกนามสกุล">
+            <label>รหัสบัตรประชาชน</label>
+            <input class="w3-input w3-border" type="text" id="CID1" placeholder="กรุณากรอกรหัสบัตรประชาชน 13 หลัก">
+            <label>โทรศัพท์</label>
+            <input class="w3-input w3-border" type="text" id="phone1" placeholder="กรุณากรอกหมายเลขโทรศัพท์ที่ติดต่อได้">
+            <label>Email</label>
+            <input class="w3-input w3-border" type="text" id="email1" placeholder="กรุณากรอก Email"> -->
+            <!-- <p><button class="w3-button w3-dark-grey">ต่อไป</button></p> -->
+            </div>
+            <script>
+                var select = document.getElementById("numofpass");
+                select.onchange = function(){
+                    var valueofselect = select.options[select.selectedIndex].text;
+                    a(parseInt(valueofselect));
+                }
+                
+            function a(i) {
+                document.getElementById("list").innerHTML = "";
+                let s = 0;
+                if(i>=0){
+                    for(let x = 0; x < i; x++){
+                        s+=1;
+                        var label = document.createElement("label");
+                        label.innerText = "ชื่อ-นามสกุล";
+                        var input = document.createElement("input");
+                        input.type = "text";
+                        input.className = "w3-input w3-border";
+                        input.id = "name" + s;
+                        input.innerHTML = "";
+                        document.getElementById('list').appendChild(label).appendChild(input);
+
+                        var label = document.createElement("label");
+                        label.innerText = "รหัสบัตรประชาชน";
+                        var input = document.createElement("input");
+                        input.type = "text";
+                        input.className = "w3-input w3-border";
+                        input.id = "CID" + s;
+                        input.innerHTML = "";
+                        document.getElementById('list').appendChild(label).appendChild(input);
+
+                        var label = document.createElement("label");
+                        label.innerText = "โทรศัพท์";
+                        var input = document.createElement("input");
+                        input.type = "text";
+                        input.className = "w3-input w3-border";
+                        input.id = "phone" + s;
+                        input.innerHTML = "";
+                        document.getElementById('list').appendChild(label).appendChild(input);
+
+                        var label = document.createElement("label");
+                        label.innerText = "email";
+                        var input = document.createElement("input");
+                        input.type = "text";
+                        input.className = "w3-input w3-border";
+                        input.id = "email" + s;
+                        input.innerHTML = "";
+                        document.getElementById('list').appendChild(label).appendChild(input);
+                    }
+                        var btn = document.createElement("button");
+                        btn.innerHTML = "ยืนยัน";
+                        document.getElementById('list').appendChild(btn);
+                }
+            }
+            
+            </script>
+            
+            
+            
+            <!-- <input class="w3-input w3-border" type="text" placeholder="Arriving at">
+            }
+        
+            
+          
+          </div>
+        
+      </div>
+
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px;">
+
+</div>
+
+<script>
+// Tabs
+function openLink(evt, linkName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("myLink");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(linkName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+
+// Click on the first tablink on load
+document.getElementsByClassName("tablink")[0].click();
+</script>
+<!-- <script>
+    function createRow(i){
+        
+    }
+</script> -->
+
+</body>
+</html>

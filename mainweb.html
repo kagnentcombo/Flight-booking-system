@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+.myLink {display: none}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Navigation Bar -->
+<div class="w3-bar w3-white w3-border-bottom w3-xlarge">
+  <a href="#" class="w3-bar-item w3-button w3-text-blue w3-hover-blue"><b><i class="fa fa-plane w3-margin-right"></i>FlightToGo</b></a>
+  <!-- <a href="#" class="w3-bar-item w3-button w3-right w3-hover-red w3-text-grey"><i class="fa fa-search"></i></a> -->
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px">
+  <img class="w3-image" src="background.png" alt="London" width="1500" height="700">
+  <div class="w3-display-middle" style="width:65%">
+    <div class="w3-bar w3-black">
+      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Flight');"><i class="fa fa-plane w3-margin-right"></i>Flight</button>
+      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Ticket');"><i class="fa fa-ticket w3-margin-right"></i>Ticket</button>
+      <!-- <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Car');"><i class="fa fa-car w3-margin-right"></i>Rental</button> -->
+    </div>
+
+    <!-- Tabs -->
+    <div id="Flight" class="w3-container w3-white w3-padding-16 myLink">
+      <!-- <h3>Travel the world with us</h3> -->
+      <h3>เลือกเที่ยวบินที่ต้องการ</h3>
+      <div class="w3-row-padding" style="margin:0 -16px;">
+        <div class="w3-half">
+          <label>From</label>
+          <select class="w3-input w3-border" id="start" name="start" placeholder="Departing from">
+            <option selected> </option>
+            <option value="start1">&nbsp สุวรรณภูมิ &nbsp</option>
+            <option value="start2">&nbsp ดอนเมือง &nbsp</option>
+            <option value="start3">&nbsp แม่ฟ้าหลวง เชียงราย &nbsp</option>
+            <option value="start4">&nbsp แม่ฮ่องสอน &nbsp</option>
+            <option value="start5">&nbsp เชียงใหม่ &nbsp</option>
+            <option value="start6">&nbsp น่านนคร &nbsp</option>
+            <option value="start7">&nbsp แพร่ &nbsp</option>
+            <option value="start8">&nbsp ลำปาง &nbsp</option>
+            <option value="start9">&nbsp แม่สอด &nbsp</option>
+            <option value="start10">&nbsp สุโขทัย &nbsp</option>
+            <option value="start11">&nbsp พิษณุโลก &nbsp</option>
+            <option value="start12">&nbsp อุดรธานี &nbsp</option>
+            <option value="start13">&nbsp นครพนม &nbsp</option>
+            <option value="start14">&nbsp ขอนแก่น &nbsp</option>
+            <option value="start15">&nbsp ร้อยเอ็ด &nbsp</option>
+            <option value="start16">&nbsp อุบลราชธานี &nbsp</option>
+            <option value="start17">&nbsp สุรินทร์ภักดี &nbsp</option>
+            <option value="start18">&nbsp ระนอง &nbsp</option>
+            <option value="start19">&nbsp สุราษฎร์ธานี &nbsp</option>
+            <option value="start20">&nbsp สมุย &nbsp</option>
+            <option value="start21">&nbsp นครศรีธรรมราช &nbsp</option>
+            <option value="start22">&nbsp ภูเก็ต &nbsp</option>
+            <option value="start23">&nbsp กระบี่ &nbsp</option>
+            <option value="start24">&nbsp ตรัง &nbsp</option>
+            <option value="start25">&nbsp หาดใหญ่ &nbsp</option>
+            <option value="start26">&nbsp นราธิวาส &nbsp</option>
+        </select>
+          
+        </div>
+        <div class="w3-half">
+          <label>To</label>
+          <select class="w3-input w3-border" id="to" name="to" placeholder="Arriving at">
+            <option selected> </option>
+            <option value="end1">&nbsp สุวรรณภูมิ &nbsp</option>
+            <option value="end2">&nbsp ดอนเมือง &nbsp</option>
+            <option value="end3">&nbsp แม่ฟ้าหลวง เชียงราย &nbsp</option>
+            <option value="end4">&nbsp แม่ฮ่องสอน &nbsp</option>
+            <option value="end5">&nbsp เชียงใหม่ &nbsp</option>
+            <option value="end6">&nbsp น่านนคร &nbsp</option>
+            <option value="end7">&nbsp แพร่ &nbsp</option>
+            <option value="end8">&nbsp ลำปาง &nbsp</option>
+            <option value="end9">&nbsp แม่สอด &nbsp</option>
+            <option value="end10">&nbsp สุโขทัย &nbsp</option>
+            <option value="end11">&nbsp พิษณุโลก &nbsp</option>
+            <option value="end12">&nbsp อุดรธานี &nbsp</option>
+            <option value="end13">&nbsp นครพนม &nbsp</option>
+            <option value="end14">&nbsp ขอนแก่น &nbsp</option>
+            <option value="end15">&nbsp ร้อยเอ็ด &nbsp</option>
+            <option value="end16">&nbsp อุบลราชธานี &nbsp</option>
+            <option value="end17">&nbsp สุรินทร์ภักดี &nbsp</option>
+            <option value="end18">&nbsp ระนอง &nbsp</option>
+            <option value="end19">&nbsp สุราษฎร์ธานี &nbsp</option>
+            <option value="end20">&nbsp สมุย &nbsp</option>
+            <option value="end21">&nbsp นครศรีธรรมราช &nbsp</option>
+            <option value="end22">&nbsp ภูเก็ต &nbsp</option>
+            <option value="end23">&nbsp กระบี่ &nbsp</option>
+            <option value="end24">&nbsp ตรัง &nbsp</option>
+            <option value="end25">&nbsp หาดใหญ่ &nbsp</option>
+            <option value="end26">&nbsp นราธิวาส &nbsp</option>
+        </select>
+          
+        </div>
+      </div>
+      <p><button class="w3-button w3-dark-grey">Search and find dates</button></p>
+    </div>
+
+    <div id="Ticket" class="w3-container w3-white w3-padding-16 myLink">
+      <h3>Find your ticket</h3>
+      <input class="w3-input w3-border" type="text" placeholder="FightID">
+      <p><button class="w3-button w3-dark-grey">Search Ticket</button></p>
+    </div>
+</header>
+
+<div class="w3-content" style="max-width:1100px;">
+
+  
+</div>
+
+<script>
+// Tabs
+function openLink(evt, linkName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("myLink");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(linkName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+
+// Click on the first tablink on load
+document.getElementsByClassName("tablink")[0].click();
+</script>
+
+</body>
+</html>
